@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="URF-8">
+        <title>PROJETO - CALCULADORA IMC</title>
+        <link href="estilos.css" rel="stylesheet">
+        <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+
+    </head>
+    <body>
+        <div class="col-xs-12 title"> Calcule o Índice de Massa Corporal (IMC) </div>
+           <span id="txtInicio">
+               <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
+               <p>
+                O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
+                <p>
+                Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.
+           <p id="font12">Fonte: <a href="https://www.programasaudefacil.com.br/calculadora-de-imc">programasaudefacil.com.br/calculadora-de-imc</a></p>
+            </span>
+            <div class="col-xs-6 form">
+                <div class="col-xs-6 col-md-3 form2">
+                    <span>Digite sua altura</span>
+                        <div class="ajuda">ex.:
+                            <span class="exAltura">Ex.: 1,67 (somente números)</span>
+                        </div>
+                        <input class="form" type="number" name="Altura" id="altura" maxlength="4" />
+                </div>
+
+                <div class="col-xs-6 col-md-3 form2">
+                    <span>Digite seu peso</span>
+                        <div class="ajuda">ex.:
+                            <span class="exPeso">Ex.: 80,200 (somente números)</span>
+                        </div>
+                        <input class="form" type="number" name="Peso" id="peso" maxlength="4" />
+                </div>
+
+            </div>
+
+        </br>
+
+            <button class="col-xs-6 col-md-3 btnCalcular">Calcular IMC</button>
+            <button class="col-xs-6 col-md-3 btnLimpar">Limpar</button>            
+            <div class="col-xs-6 col-md-3 resultadoCalculo"></div>
+            
+            <div class="tabela">
+                <table class="tblIMC">
+                    <tr>
+                        <th>IMC</th>
+                        <th>CLASSIFICAÇÃO</th>
+                        <th>OBESIDADE (GRAU)</th>
+                    </tr>
+                    <tr>
+                        <td>MENOR QUE 18,5</td>
+                        <td>MAGREZA</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 18,5 E 24,9</td>
+                        <td>NORMAL</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 25,0 E 29,9</td>
+                        <td>SOBREPESO</td>
+                        <td>I</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 30,0 E 39,9</td>
+                        <td>OBESIDADE</td>
+                        <td>II</td>
+                    </tr>
+                    <tr>
+                        <td>MAIOR QUE 40,0</td>
+                        <td>OBESIDADE GRAVE</td>
+                        <td>III</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="rodape font12"></div>       
+    </body>
+</html>
